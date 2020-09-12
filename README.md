@@ -53,6 +53,9 @@ import Objs from './Yumeisoft/CommonFrontUtils/Objs';
 
 以以下数据为例，介绍 Objs 各个功能
 
+<details>
+<summary>查看代码</summary>
+
 ```javascript
 let input = [
   {
@@ -108,6 +111,8 @@ let input = [
   },
 ];
 ```
+</details>
+
 
 ### 深拷贝操作
 
@@ -147,6 +152,8 @@ Objs(input)
 ```
 
 执行结果:
+<details>
+<summary>点击查看执行结果</summary>
 
 ```javascript
 [
@@ -182,6 +189,7 @@ Objs(input)
   },
 ];
 ```
+</details>
 
 ### 依据主键获取对象 Object
 
