@@ -5,7 +5,8 @@
 （瑜美科技出品）
 
 > 如果你觉得这个项目帮助到你了，不妨请作者喝杯咖啡吧，作者会更加努力更新哦！
-> <img src="./images/qrcode.jpg" style="width:200px" />
+>
+> <img src="./images/qrcode.jpg" width="200" />
 
 如何启动演示：
 
