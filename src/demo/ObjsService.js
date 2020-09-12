@@ -22,7 +22,7 @@ export default class Demo {
       '获取映射表Key-Object': (input) => {
         return Objs(input).keyObj('id');
       },
-      单取name集合: (input) => {
+      维度抽取: (input) => {
         return Objs(input).colList('name');
       },
       取age的平均值: (input) => {
@@ -40,7 +40,7 @@ export default class Demo {
       取出字段名的List: (input) => {
         return Objs(input).colNames();
       },
-      取出公共键名的List: (input) => {
+      取出公共字段名的List: (input) => {
         return Objs(input).sharedColNames();
       },
       自定义遍历获取List: (input) => {
