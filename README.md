@@ -207,6 +207,8 @@ Objs(input).one('id', '0f0479cc-59fe-4c56-9685-75c4067300b6');
 ```
 
 执行结果:
+<details>
+<summary>点击查看执行结果</summary>
 
 ```javascript
 {
@@ -220,6 +222,7 @@ Objs(input).one('id', '0f0479cc-59fe-4c56-9685-75c4067300b6');
   "superior": "823585b8-062d-4e15-b17c-2d8932d4a1a4"
 }
 ```
+</details>
 
 ### 抽取指定字段映射表 Map
 
@@ -237,6 +240,8 @@ Objs(input).keyColumn('id', 'name');
 ```
 
 执行结果:
+<details>
+<summary>点击查看执行结果</summary>
 
 ```javascript
 {
@@ -247,6 +252,7 @@ Objs(input).keyColumn('id', 'name');
   "f01430fd-5df3-402a-92ef-aca63d882e2b": "小明"
 }
 ```
+</details>
 
 ### 获取映射表 Key-Object
 
@@ -264,6 +270,8 @@ Objs(input).keyObj('id');
 ```
 
 执行结果:
+<details>
+<summary>点击查看执行结果</summary>
 
 ```javascript
 {
@@ -320,6 +328,7 @@ Objs(input).keyObj('id');
   }
 }
 ```
+</details>
 
 ### 维度抽取
 
@@ -337,10 +346,13 @@ Objs(input).colList('name');
 ```
 
 执行结果:
+<details>
+<summary>点击查看执行结果</summary>
 
 ```javascript
 ['张三', '李四', '王五', '小红', '小明'];
 ```
+</details>
 
 ### 快速平均值
 
@@ -496,6 +508,8 @@ Objs(input).each((item) => (item.status = 0));
 ```
 
 执行结果:
+<details>
+<summary>点击查看执行结果</summary>
 
 ```javascript
 [
@@ -557,6 +571,7 @@ Objs(input).each((item) => (item.status = 0));
   },
 ];
 ```
+</details>
 
 ### 转换为二维数组 Lists
 
@@ -574,6 +589,8 @@ Objs(input).toLists();
 ```
 
 执行结果:
+<details>
+<summary>点击查看执行结果</summary>
 
 ```javascript
 [
@@ -634,6 +651,7 @@ Objs(input).toLists();
   ],
 ];
 ```
+</details>
 
 ### 按指定字段转换为二维数组获取 Lists
 
@@ -651,6 +669,8 @@ Objs(input).toLists(['name', 'age']);
 ```
 
 执行结果:
+<details>
+<summary>点击查看执行结果</summary>
 
 ```javascript
 [
@@ -661,6 +681,7 @@ Objs(input).toLists(['name', 'age']);
   ['小明', 24],
 ];
 ```
+</details>
 
 ### 抽取所有字段组成 Key-List
 
@@ -678,6 +699,8 @@ Objs(input).colLists();
 ```
 
 执行结果:
+<details>
+<summary>点击查看执行结果</summary>
 
 ```javascript
 {
@@ -746,6 +769,7 @@ Objs(input).colLists();
   ]
 }
 ```
+</details>
 
 ### 抽取指定字段组成 Key-List
 
@@ -763,6 +787,8 @@ Objs(input).colLists(['name', 'gender']);
 ```
 
 执行结果:
+<details>
+<summary>点击查看执行结果</summary>
 
 ```javascript
 {
@@ -782,6 +808,7 @@ Objs(input).colLists(['name', 'gender']);
   ]
 }
 ```
+</details>
 
 ### 单字段分组获取 Key-Objects
 
@@ -799,6 +826,8 @@ Objs(input).group('dept');
 ```
 
 执行结果:
+<details>
+<summary>点击查看执行结果</summary>
 
 ```javascript
 {
@@ -859,6 +888,7 @@ Objs(input).group('dept');
   ]
 }
 ```
+</details>
 
 ### 多字段分组获取 Key-Objects
 
@@ -876,6 +906,8 @@ Objs(input).group(['dept', 'gender']);
 ```
 
 执行结果:
+<details>
+<summary>点击查看执行结果</summary>
 
 ```javascript
 {
@@ -938,6 +970,7 @@ Objs(input).group(['dept', 'gender']);
   ]
 }
 ```
+</details>
 
 ### 自定义分组获取 Key-Objects
 
@@ -961,6 +994,8 @@ Objs(input).group((item) => {
 ```
 
 执行结果:
+<details>
+<summary>点击查看执行结果</summary>
 
 ```javascript
 {
@@ -1021,6 +1056,7 @@ Objs(input).group((item) => {
   ]
 }
 ```
+</details>
 
 ### 转树形结构获取 Trees
 
@@ -1038,6 +1074,8 @@ Objs(input).toTrees('id', 'superior', 'subordinates');
 ```
 
 执行结果:
+<details>
+<summary>点击查看执行结果</summary>
 
 ```javascript
 [
@@ -1098,6 +1136,7 @@ Objs(input).toTrees('id', 'superior', 'subordinates');
   },
 ];
 ```
+</details>
 
 ### 聚合分组
 
@@ -1150,6 +1189,8 @@ Objs(input).sortBy('age');
 ```
 
 执行结果:
+<details>
+<summary>点击查看执行结果</summary>
 
 ```javascript
 [
@@ -1206,3 +1247,4 @@ Objs(input).sortBy('age');
   }
 ]
 ```
+</details>
